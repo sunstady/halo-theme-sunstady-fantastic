@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
         <#--主页添加的CSS-->
         <#if is_index?? || is_search?? || is_category?? || is_tag?? || is_sheet??>
-            <link rel="stylesheet" href="${theme_base!}/source/css/index.css">
+            <link rel="stylesheet" href="${theme_base!}/source/css_simple/index.css">
             <style>
                 /* 列表项中a标签划过样式 */
                 .list-item a:hover {
@@ -42,7 +42,7 @@
         </#if>
         <#--归档界面添加的CSS-->
         <#if is_archives?? || is_tags?? || is_categories??>
-            <link rel="stylesheet" href="${theme_base!}/source/css/time-line.css">
+            <link rel="stylesheet" href="${theme_base!}/source/css_simple/time-line.css">
             <style>
                 /* 列表盒子中每一个a标签的划过样式 */
                 ul.title-list li a:hover {
@@ -56,13 +56,13 @@
             </style>
         </#if>
         <#if is_category??>
-            <link rel="stylesheet" href="${theme_base!}/source/css/category.css">
+            <link rel="stylesheet" href="${theme_base!}/source/css_simple/category.css">
         </#if>
         <#--文章界面需要引入的CSS-->
         <#if is_post??>
         <#--Github MarkDown的引入-->
-            <link rel="stylesheet" href="${theme_base!}/source/css/github-markdown.css">
-            <link rel="stylesheet" href="${theme_base!}/source/css/post.css">
+            <link rel="stylesheet" href="${theme_base!}/source/css_simple/github-markdown.css">
+            <link rel="stylesheet" href="${theme_base!}/source/css_simple/post.css">
         <#--代码高亮用到的CSS-->
             <link href="${settings.code_css_url!'https://cdn.staticfile.org/highlight.js/9.18.1/styles/github.min.css'}"
                   rel="stylesheet">
@@ -106,7 +106,7 @@
         <#--日志界面的样式-->
         <#if is_journal?? || is_journals??>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-            <link rel="stylesheet" href="${theme_base!}/source/css/journals.css">
+            <link rel="stylesheet" href="${theme_base!}/source/css_simple/journals.css">
             <style>
                 /*用户的操作链接划过颜色*/
                 .journals .journal-item .journal-operation a:hover {
@@ -115,11 +115,11 @@
             </style>
         </#if>
         <#if is_sheet??>
-            <link rel="stylesheet" href="${theme_base!}/source/css/sheet.css">
+            <link rel="stylesheet" href="${theme_base!}/source/css_simple/sheet.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css" integrity="sha256-0EDwznjUTDEicOuZhOL03fpflUqzhkByvhwol8YGkp4=" crossorigin="anonymous">
         </#if>
         <#--页面公用的CSS-->
-        <link rel="stylesheet" href="${theme_base!}/source/css/style.css">
+        <link rel="stylesheet" href="${theme_base!}/source/css_simple/style.css">
 
         <style>
             /* 定义滚动条滑块颜色 */
@@ -173,13 +173,13 @@
     <#include "footer.ftl">
 
     <#--全局的JavaScript脚本-->
-    <script type="text/javascript" src="${theme_base!}/source/js/index.js"></script>
-    <script type="text/javascript" src="${theme_base!}/source/js/navbar.js"></script>
+    <script type="text/javascript" src="${theme_base!}/source/js_simple/index.js"></script>
+    <script type="text/javascript" src="${theme_base!}/source/js_simple/navbar.js"></script>
     <#if is_archives?? || is_tags?? || is_categories??>
-        <script type="text/javascript" src="${theme_base!}/source/js/navigation.js"></script>
+        <script type="text/javascript" src="${theme_base!}/source/js_simple/navigation.js"></script>
     </#if>
     <#if is_search??>
-        <script type="text/javascript" src="${theme_base!}/source/js/search.js"></script>
+        <script type="text/javascript" src="${theme_base!}/source/js_simple/search.js"></script>
     </#if>
     <#-- 额外配置功能-->
     <#if is_post?? || is_sheet??>
@@ -208,7 +208,7 @@
     <#if is_post??>
         <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="${theme_base!}/source/js/post.js"></script>
+        <script type="text/javascript" src="${theme_base!}/source/js_simple/post.js"></script>
     <#--代码高亮库-->
     <#--官方库的语言种类目前有185种
     1c、abnf、accesslog、actionscript、ada、angelscript、apache、applescript、arcade、arduino、armasm、
@@ -282,10 +282,10 @@
     </#if>
     <#if is_journal?? || is_journals??>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="${theme_base!}/source/js/journals.js"></script>
+        <script type="text/javascript" src="${theme_base!}/source/js_simple/journals.js"></script>
     </#if>
     <#if is_sheet??>
-        <script type="text/javascript" src="${theme_base!}/source/js/sheet.js"></script>
+        <script type="text/javascript" src="${theme_base!}/source/js_simple/sheet.js"></script>
     </#if>
     <div id="backTop" class="back-top">
         <span><i class="fas fa-caret-up"></i></span>

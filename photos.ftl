@@ -26,4 +26,4 @@
     </@photoTag>
 </@layout>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-<script src="${theme_base!}/source/js/photos.js"></script>
+<script src="${theme_base!}/source/js_simple/photos.js"></script>

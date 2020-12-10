@@ -33,7 +33,7 @@ Fantastic主题修改版，为方便维护，重新发布此版本。<br>
 [Halo自定义页面的使用方法](https://blog.xinac.cn/archives/halo-usage-200409)
 <br>
 
-> 效果预览：https://blog.xinac.cn/s/links
+> 效果预览：http://caroly.fun:11044/links
 
 <br>
 
@@ -41,7 +41,7 @@ Fantastic主题修改版，为方便维护，重新发布此版本。<br>
 ---
 
 ## 预览网址
-[https://blog.xinac.cn/](https://blog.xinac.cn/) 
+[http://caroly.fun:11044/](http://caroly.fun:11044/) 
 
 ---
 

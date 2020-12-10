@@ -12,7 +12,7 @@
                 </#if>
                 <#if settings.bokejishi!true>
                     <p style="text-align: left; line-height: 20px;margin: 0">
-                        我的博客已经运行&nbsp;&nbsp;<span id="clock"></span>&nbsp;&nbsp;啦！<br>
+                        似水流年：&nbsp;&nbsp;<span id="clock"></span><br>
                     </p>
                     <script type="text/javascript">
 						/* 尾部定时 */
@@ -37,7 +37,7 @@
 							} else {
 								var hd = hour - day * 24;
 								var mh = min - day * 24 * 60 - hd * 60;
-								runTime = day + "天" + hd + "时" + mh + "分" + (time - day * 24 * 3600 - hd * 3600 - mh * 60) + "秒";
+								runTime = day + " 天 " + hd + " 时 " + mh + " 分 " + (time - day * 24 * 3600 - hd * 3600 - mh * 60) + " 秒 ";
 							}
 
 							document.getElementById('clock').innerHTML = runTime;
@@ -53,7 +53,7 @@
                 </#if>
                 <#if settings.social_free?? && settings.social_free!=''>
                     <p style="text-align: left; line-height: 20px; margin: 0">
-                        &copy; ${user.nickname!}&nbsp;${settings.social_free!}
+                        ${settings.social_free!}
                     </p>
                 </#if>
                 <#if settings.caidai!true>

@@ -32,7 +32,8 @@
                 <!-- logo -->
                 <div class="logo">
                     <a href="/" target="_blank" class="logo-expanded">
-                        <img src="${blog_logo!}" width="100%" alt="${user.description!}" />
+                      <p style="font-color:white;font-size:24px;">${blog_title!}</p>
+                        <!--<img src="${user.avatar!}" width="80%" alt="${user.description!}" />-->
                     </a>
                     <a href="/" target="_blank" class="logo-collapsed">
                         <img src="${user.avatar!}" width="40" alt="${user.description!}" />
@@ -138,7 +139,61 @@
             <div class="footer-inner">
                 <!-- Add your copyright text here -->
                 <div class="footer-text">
-                    <script type="text/javascript" src="//s.xinac.net/static/js_foot.js"></script>
+					<#if settings.busuanzi!true>
+                    <p style="text-align: left; line-height: 20px; margin: 0">
+                        <script async src="${settings.cdn_busuanzi_js!}"></script>
+                        <br>
+                        <span id="busuanzi_container_site_pv" style='display:none'>总访问量 <span id="busuanzi_value_site_pv"></span> 次 </span>
+                        <span id="busuanzi_container_site_uv" style='display:none'>| 总访客数 <span id="busuanzi_value_site_uv"></span> 人 </span>
+                    </p>
+                </#if>
+                <#if settings.bokejishi!true>
+                    <p style="text-align: left; line-height: 20px;margin: 0">
+                        似水流年：&nbsp;&nbsp;<span id="clock"></span><br>
+                    </p>
+                    <script type="text/javascript">
+						/* 尾部定时 */
+						var int = self.setInterval("clock()", 1000);
+
+						function clock() {
+							var nowDay = new Date();
+							var localDay = new Date("${settings.time_start!}");
+							var time = parseInt((nowDay.getTime() - localDay.getTime()) / 1000);
+							var min = parseInt(time / 60);
+							var hour = parseInt(time / 60 / 60);
+							var day = parseInt(time / 60 / 60 / 24);
+
+							var runTime = "0";
+							if (min == 0) {
+								runTime = time + "秒";
+							} else if (hour == 0) {
+								runTime = min + "分" + (time - min * 60) + "秒";
+							} else if (day == 0) {
+								var mh = min - hour * 60;
+								runTime = hour + "时" + mh + "分" + (time - hour * 3600 - mh * 60) + "秒"
+							} else {
+								var hd = hour - day * 24;
+								var mh = min - day * 24 * 60 - hd * 60;
+								runTime = day + " 天 " + hd + " 时 " + mh + " 分 " + (time - day * 24 * 3600 - hd * 3600 - mh * 60) + " 秒 ";
+							}
+
+							document.getElementById('clock').innerHTML = runTime;
+						}
+                    </script>
+                </#if>
+                <#if settings.social_beian?? && settings.social_beian!=''>
+                    <p style="text-align: left; line-height: 20px;">
+                        <a target="_blank" href="http://beian.miit.gov.cn/" style="color: black;font-style: inherit;font-weight: inherit;">
+                            ${settings.social_beian!}
+                        </a>
+                    </p>
+                </#if>
+                <#if settings.social_free?? && settings.social_free!=''>
+                    <p style="text-align: left; line-height: 20px; margin: 0">
+                        ${settings.social_free!}
+                    </p>
+                </#if>
+                  <!--<script type="text/javascript" src="//s.xinac.net/static/js_foot.js"></script>-->
                 </div>
                 <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
                 <div class="go-up">

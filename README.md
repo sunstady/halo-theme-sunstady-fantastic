@@ -60,5 +60,5 @@ Fantastic主题修改版，为方便维护，重新发布此版本。<br>
 
 1. 克隆或者下载
 2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用
-3. 用Halo自还的程序拉取 `https://github.com/jinqilin721/halo-theme-xinac-fantastic.git`
+3. 用Halo自还的程序拉取 `https://github.com/sunstady/halo-theme-sunstady-fantastic.git`
 4. 当前版本`1.4.1`，修改日志详见 `CHANGELOG.md`

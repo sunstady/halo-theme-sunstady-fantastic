@@ -1,7 +1,7 @@
 <#--相册界面OK-->
 <#include "module/layout.ftl">
 <@layout title="个人相册 | ${blog_title!}">
-    <link rel="stylesheet" href="${theme_base!}/source/css/photos.css">
+    <link rel="stylesheet" href="${theme_base!}/source/css_simple/photos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 <#--所有的图片先加载到这个位置，但是这个位置默认隐藏的-->
     <#include "module/photos/photo_item.ftl"/>

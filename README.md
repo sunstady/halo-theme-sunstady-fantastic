@@ -30,11 +30,6 @@ Fantastic主题修改版，为方便维护，重新发布此版本。<br>
 <br>
 <br>
 
-> 效果预览：http://caroly.fun:11044/links
-
-<br>
-
-
 ---
 
 ## 预览网址

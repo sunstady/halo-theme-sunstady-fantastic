@@ -1,11 +1,11 @@
-id: xinac-fantastic
-name: Xinac-Fantastic
+id: sunsatdy-fantastic
+name: Sunsatdy-Fantastic
 author:
-  name: 新逸Cary
-  website: https://blog.xinac.cn
-description: Fantastic主题修改版，https://github.com/jinqilin721/halo-theme-xinac-fantastic
+  name: caroly
+  website: http://caroly.fun:11044/
+description: Fantastic主题修改版，https://github.com/sunstady/halo-theme-sunstady-fantastic
 logo: https://blog.xinac.cn/avatar
-website: https://github.com/jinqilin721/halo-theme-xinac-fantastic
-repo: https://github.com/jinqilin721/halo-theme-xinac-fantastic
-version: 1.4.1
-require: 1.3.0
+website: https://github.com/sunstady/halo-theme-sunstady-fantastic
+repo: https://github.com/sunstady/halo-theme-sunstady-fantastic
+version: 1.5.0
+require: 1.4.1

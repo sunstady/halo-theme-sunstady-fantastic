@@ -13,7 +13,7 @@
     <#--BootStrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous">
 
-      <#include "../layout/plugin/style.theme.ftl">
+    <#include "../layout/plugin/style.theme.ftl">
       
     <link rel="stylesheet" href="${settings.cdn_bulma_css!}" />
     <link rel="stylesheet" href="${settings.cdn_fontawesome_css!}" />
@@ -22,36 +22,44 @@
     <link rel="stylesheet" href="${theme_base!}/source/css/style.css" />
 
     <style>
-      * {font-size: 14px}
-      a:hover {text-decoration: none;background: none !important;}
-      .page-link:hover {background: #337ab7 !important;}
-      .container {
-      	padding-right: 0px;
-        padding-left: 0px;
-      }
-      .navbar-brand {
-      	margin-right: 0px;
-      }
-      .text-muted {
-      	color: none !important;
-        font-weight: inherit !important;
-      }
+        * {font-size: 14px}
+        a:hover {text-decoration: none;background: none !important;}
+        .page-link:hover {background: #337ab7 !important;}
+        .container {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .navbar-brand {
+          	margin-right: 0px;
+        }
+        .text-muted {
+            color: none !important;
+            font-weight: inherit !important;
+        }
     </style>
-        <#--日志界面的样式-->
-        <#if is_journal?? || is_journals??>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-            <link rel="stylesheet" href="${theme_base!}/source/css_simple/journals.css">
-            <style>
-                /*用户的操作链接划过颜色*/
-                .journals .journal-item .journal-operation a:hover {
-                    color: ${settings.hover_color!'#dc3545'} !important;
-                }
-            </style>
-        </#if>
-        <#if is_sheet??>
-            <link rel="stylesheet" href="${theme_base!}/source/css_simple/sheet.css">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css" integrity="sha256-0EDwznjUTDEicOuZhOL03fpflUqzhkByvhwol8YGkp4=" crossorigin="anonymous">
-        </#if>
+    <#--日志界面的样式-->
+    <#if is_journal?? || is_journals??>  
+        <#--代码高亮用到的CSS-->
+        <link rel="stylesheet" href="${theme_base!}/source/css_simple/github_markdown.css">
+        <link href="${settings.code_css_url!'https://cdn.staticfile.org/highlight.js/9.18.1/styles/github.min.css'}"
+                  rel="stylesheet">    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">    
+        <link rel="stylesheet" href="${theme_base!}/source/css_simple/journals.css">        
+        <style>
+            blockquote {
+                background-color: #EBEDED !important;
+                color: var(--color) !important;
+            }
+            ul {
+                list-style-type: circle;
+                padding-left: 3rem !important;
+            }
+            /*用户的操作链接划过颜色*/
+            .journals .journal-item .journal-operation a:hover {
+              	color: ${settings.hover_color!'#dc3545'} !important;
+            }
+        </style>
+    </#if>    
     </head>
     <body>
     <#--  导航栏  -->
@@ -73,9 +81,6 @@
 	<#if is_journal?? || is_journals??>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="${theme_base!}/source/js_simple/journals.js"></script>
-    </#if>
-    <#if is_sheet??>
-        <script type="text/javascript" src="${theme_base!}/source/js_simple/sheet.js"></script>
     </#if>
     <div id="backTop" class="back-top">
         <span><i class="fas fa-caret-up"></i></span>

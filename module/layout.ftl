@@ -54,6 +54,9 @@
                 list-style-type: circle;
                 padding-left: 3rem !important;
             }
+	    ul ul{
+		list-style-type: square;
+            }
             /*用户的操作链接划过颜色*/
             .journals .journal-item .journal-operation a:hover {
               	color: ${settings.hover_color!'#dc3545'} !important;

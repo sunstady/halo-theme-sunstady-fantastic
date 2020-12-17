@@ -31,11 +31,11 @@
             <header class="logo-env">
                 <!-- logo -->
                 <div class="logo">
-                    <a href="/" target="_blank" class="logo-expanded">
+                    <a href="/" class="logo-expanded">
                       <p style="font-color:white;font-size:24px;">${blog_title!}</p>
                         <!--<img src="${user.avatar!}" width="80%" alt="${user.description!}" />-->
                     </a>
-                    <a href="/" target="_blank" class="logo-collapsed">
+                    <a href="/" class="logo-collapsed">
                         <img src="${user.avatar!}" width="40" alt="${user.description!}" />
                     </a>
                 </div>

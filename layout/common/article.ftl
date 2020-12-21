@@ -109,7 +109,7 @@
                     <#if post.summary?? && post.summary!=''>
                         <div class="level-end">
                             <div class="level-item">
-                                <a class="button is-size-7 is-light" target="_blank" href="${post.fullPath!}#more">阅读更多</a>
+                                <a class="button is-size-7 is-light" href="${post.fullPath!}#more">阅读更多</a>
                             </div>
                         </div>
                     </#if>

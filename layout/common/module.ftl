@@ -23,7 +23,7 @@
                                 <span class="blog-slider__code">${post.createTime?string["yyyy-MM-dd EE"]}</span>
                                 <div class="blog-slider__title "><a class="title is-5" href="${post.fullPath!}">${post.title!}</a></div>
                                 <div class="blog-slider__text" content="">${post.summary!}</div>
-                                <a href="${post.fullPath!}" target="_blank" class="blog-slider__button">阅读更多</a>
+                                <a href="${post.fullPath!}" class="blog-slider__button">阅读更多</a>
                             </div>
                         </div>
                     </#if>

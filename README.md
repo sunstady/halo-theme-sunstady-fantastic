@@ -30,9 +30,9 @@ Fantastic主题修改版，为方便维护，重新发布此版本。<br>
 
 ## 预览截图
 
-![](https://caroly.site/caroly_img/caroly_github_1.png)
+![](http://caroly.site/caroly_img/caroly_github_1.png)
 
-![](https://caroly.site/caroly_img/caroly_github_2.png)
+![](http://caroly.site/caroly_img/caroly_github_2.png)
 
 
 ## 使用方法

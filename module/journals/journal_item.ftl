@@ -15,6 +15,12 @@
             </div>
         </div>
         <#--日志项内容-->
+        <style>
+            .language-java{
+                background-color: transparent !important;
+                font-size: 1.1em !important;
+            }
+        </style>
         <div class="journal-content text-muted pb-3 border-bottom px-2">
             ${journal.content}
         </div>

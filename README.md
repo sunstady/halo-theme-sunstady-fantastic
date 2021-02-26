@@ -3,11 +3,12 @@
 ---
 
 Halo博客系统主题<br>
-Fantastic主题修改版，为方便维护，重新发布此版本。<br>
+Fantastic主题修改版，[新逸](https://blog.xinac.cn/) 修改版<br>
 
 此版本相关主题：
 - https://github.com/Bursteretion/halo-theme-fantastic
 - https://github.com/imkundev/halo-theme-fantastic
+- https://github.com/jinqilin721/halo-theme-xinac-fantastic
 
 ---
 

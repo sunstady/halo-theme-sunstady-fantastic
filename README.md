@@ -30,13 +30,9 @@ Fantastic主题修改版，为方便维护，重新发布此版本。<br>
 
 ## 预览截图
 
-![](https://qiniucdn.xinac.net/blog/screenshot_1586231110425.png)
+![](https://caroly.site/caroly_img/caroly_github_1.png)
 
-![](https://qiniucdn.xinac.net/blog/screenshot-2_1586231110444.png)
-
-![](https://qiniucdn.xinac.net/blog/screenshot-3_1586231110351.png)
-
-![](https://qiniucdn.xinac.net/blog/screenshot-4_1586231115821.png)
+![](https://caroly.site/caroly_img/caroly_github_2.png)
 
 
 ## 使用方法

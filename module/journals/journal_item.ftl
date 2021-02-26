@@ -16,7 +16,7 @@
         </div>
         <#--日志项内容-->
         <style>
-            .language-java{
+            code[class^="language"]{
                 background-color: transparent !important;
                 font-size: 1.1em !important;
             }

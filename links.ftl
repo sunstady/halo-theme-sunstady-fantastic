@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+-<!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="viggo" />
-    <title>网址导航 | ${blog_title!}</title>
+    <title>网址导航 - ${blog_title!}</title>
     <meta name="keywords" content="网址导航">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="${theme_base!}/source/assets/css/fonts/linecons/css/linecons.css">

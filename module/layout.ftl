@@ -81,10 +81,33 @@
     <#-- 公共底部代码，包含：统计代码，底部信息 -->
     <#include "../layout/common/footer.ftl">
       
-	<#if is_journal?? || is_journals??>
+    <#if is_journal?? || is_journals??>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="${theme_base!}/source/js_simple/journals.js"></script>
     </#if>
+    <script>
+        var url = location.href;
+        var urlstatus = false;
+        $(".navbar-start a").each(function () {
+            if ((url + '/').indexOf($(this).attr('href')) > -1 && $(this).attr('href') != '/') {
+                $(this).addClass('is-active');
+                urlstatus = true;
+            } else {
+                $(this).removeClass('is-active');
+            }
+        });
+        if (!urlstatus) {
+            $(".navbar-start a").eq(0).addClass('is-active');
+        }
+
+        $(function () {
+            $('.link-hover-cus').hover(function () {
+                $(this).find('.level-right').show();
+            }, function () {
+                $(this).find('.level-right').hide();
+            })
+        });
+    </script>
     <div id="backTop" class="back-top">
         <span><i class="fas fa-caret-up"></i></span>
     </div>

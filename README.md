@@ -1,4 +1,4 @@
-> 当前主题已支持 Halo v1.3.0版本，Halo 1.2.0及以下版本请使用 [v1.2.0](https://github.com/jinqilin721/halo-theme-xinac-fantastic/tree/v1.2.0) 版本主题。
+> 当前主题已支持 Halo v1.4.5 版本，Halo 1.2.0 及以下版本请使用 [v1.2.0](https://github.com/jinqilin721/halo-theme-xinac-fantastic/tree/v1.2.0) 版本主题。
 
 ---
 
@@ -37,5 +37,5 @@ Fantastic主题修改版，[新逸](https://blog.xinac.cn/) 修改版<br>
 
 1. 克隆或者下载
 2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用
-3. 用Halo自还的程序拉取 `https://github.com/sunstady/halo-theme-sunstady-fantastic.git`
-4. 当前版本`1.5.0`，修改日志详见 `CHANGELOG.md`
+3. 用 Halo 自带的程序拉取 `https://github.com/sunstady/halo-theme-sunstady-fantastic.git`
+4. 当前版本 `1.5.0`，修改日志详见 `CHANGELOG.md`

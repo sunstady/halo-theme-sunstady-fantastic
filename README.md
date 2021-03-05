@@ -22,7 +22,7 @@ Fantastic主题修改版，[新逸](https://blog.xinac.cn/) 修改版<br>
 ---
 
 ## 预览网址
-[http://caroly.fun](http://caroly.fun:8090/) 
+[https://caroly.fun/](https://caroly.fun/) 
 
 ---
 

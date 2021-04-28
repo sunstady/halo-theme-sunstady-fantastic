@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <#macro layout title,canonical>
 <#include "common/head.ftl">
 <#include "common/navbar.ftl">
 <#include "common/widget.ftl">
 <#include "common/module.ftl">
-<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />

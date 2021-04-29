@@ -744,3 +744,8 @@ p {
 .journal-page {
   margin-top: 15px;
 }
+
+.card p img {
+  display:block;
+  margin:0 auto;
+}

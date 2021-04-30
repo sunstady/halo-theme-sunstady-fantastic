@@ -52,12 +52,8 @@
                             if (num > lastNum) {
                                 levelArr.push(1);
                                 lastRevNum += 1;
-                            } else if (num === lastRevNum ||
-                                num > lastRevNum && num <= lastNum) {
-                                levelArr.push(0);
-                                lastRevNum = lastRevNum;
-                            } else if (num < lastRevNum) {
-                                levelArr.push(num - lastRevNum);
+                            } else  {
+                                levelArr.push(num - lastNum);
                                 lastRevNum = num;
                             }
                             count += levelArr[levelArr.length - 1];
@@ -277,7 +273,7 @@
         margin-left: -15px;
         white-space: nowrap;
         width: 200px;
-        padding-left: 30px;
+        padding-left: 40px;
         display: inline-block;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -287,7 +283,7 @@
     #toc ul li ul li ul li a {
         display: inline-block;
         margin-left: -15px;
-        padding-left: 35px;
+        padding-left: 75px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;

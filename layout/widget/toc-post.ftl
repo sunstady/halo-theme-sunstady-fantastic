@@ -261,7 +261,7 @@
     #toc ul li a {
         margin-left: -5px;
         white-space: nowrap;
-        width: 200px;
+        width: 250px;
         padding-left: 15px;
         display: inline-block;
         overflow: hidden;
@@ -272,7 +272,7 @@
     #toc ul li ul li a {
         margin-left: -15px;
         white-space: nowrap;
-        width: 200px;
+        width: 250px;
         padding-left: 40px;
         display: inline-block;
         overflow: hidden;
@@ -287,7 +287,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 200px;
+        width: 250px;
     }
 
     .directory-fixed {

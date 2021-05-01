@@ -90,6 +90,7 @@
                         link.href = '#' + titleId[i];
                         link.innerHTML = !isDirNum ? contentArr[i] :
                             dirNum.join('.') + ' ' + contentArr[i];
+                        link.title= link.innerHTML;
                         li.appendChild(link);
                         currentList.appendChild(li);
                     }

@@ -73,6 +73,9 @@
         .attr-name {
             padding-left: 0.75em !important;
         }
+        .footer {
+            padding: 0.5rem 2rem 2rem !important;
+        }
     </#if>
     </style>
 <#if is_post?? || is_sheet?? || is_journal??>

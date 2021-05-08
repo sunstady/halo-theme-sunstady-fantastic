@@ -1,3 +1,8 @@
+<style>
+.footer {
+    padding: 0.5rem 2rem 2rem !important;
+}
+</style>
 <footer class="footer">
     <div class="container">
         <div class="level">

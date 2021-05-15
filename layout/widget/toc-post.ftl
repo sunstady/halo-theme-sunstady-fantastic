@@ -274,7 +274,7 @@
         margin-left: -15px;
         white-space: nowrap;
         width: 250px;
-        padding-left: 40px;
+        padding-left: 30px;
         display: inline-block;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -284,7 +284,7 @@
     #toc ul li ul li ul li a {
         display: inline-block;
         margin-left: -15px;
-        padding-left: 75px;
+        padding-left: 60px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
